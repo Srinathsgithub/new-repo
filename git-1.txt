@@ -14,5 +14,5 @@ git branch
 git checkout -b developer
 git branch
 git remote origin https://github.com/Srinathsgithub/ec2repo.git
-git push -m developer
+git push -u origindeveloper
 Username & password (token password)
