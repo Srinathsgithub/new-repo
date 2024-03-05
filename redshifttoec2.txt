@@ -1,0 +1,44 @@
+creating a redshift database
+
+1.craete the redshift cluster(in this we just need to select the less storage,ndodes should be 2,no multiavailableityzones,username & password)
+2.crate s3 busket and add sumdata
+3.that data sholud be in .csv format means save a file data in .csv that file should be any data format
+4.go to query editor and connect it
+5.after connecting click on load data
+6.in that data loading use s3 
+7.click on next, in this we can create the own table or use the exisiting table(create the new table for better understanding)
+8.give the schemaname(public) and tablename
+9.then enter the query
+	SELECT * from tablename;
+
+crating the redshift and add data using ec2
+1.craete the redshift cluster(in this we just need to select the less storage,ndodes should be 2,no multiavailableityzones,username & password)
+2.create ec2 instance and add sg port 5439(redshift portnumber)
+3.click connect 
+.sudo apt update
+.sudo apt install postgresql-client
+.psql -h <redshift_cluster_hostname> -p 5439 -d <database_name> -U <username>
+then we get
+(psql (version x.x.x, server x.x.x)
+SSL connection (protocol: TLSv1.2, cipher: ECDHE-RSA-AES256-GCM-SHA384, bits: 256, compression: off)
+Type "help" for help.
+
+database_name=>) this 
+
+.SELECT datname FROM pg_database;
+creating the table in it
+.CREATE TABLE employees (
+    employee_id INT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100)
+);
+adding data in it
+INSERT INTO employees (employee_id, first_name, last_name, email) 
+VALUES
+    (1, 'John', 'Doe', 'john@example.com'),
+    (2, 'Jane', 'Smith', 'jane@example.com'),
+    (3, 'Alice', 'Johnson', 'alice@example.com');
+executing that data
+
+SELECT * FROM employees;

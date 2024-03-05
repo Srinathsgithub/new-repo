@@ -1,0 +1,18 @@
+Task 1 commands
+
+sudo su
+mkdir myproject
+cd myproject
+touch Code.txt Log.txt Output.txt
+nano Code.txt
+nano Output.txt
+git init
+git add Code.txt Output.txt
+git status
+git commit -m “Initial commit”
+git branch
+git checkout -b developer
+git branch
+git remote origin https://github.com/Srinathsgithub/ec2repo.git
+git push -m developer
+Username & password (token password)
