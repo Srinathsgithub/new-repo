@@ -1,0 +1,46 @@
+Task 2 commands
+
+1  mkdir myproject
+    2  cd myproject
+    3  git init
+    4  git ckeckout -b Develop
+    5  git checkout -b Develop
+    6  git checkout -b F1
+    7  git checkout -b F2
+    8  git checkout -b Main
+    9  touch main.txt
+   10  ls
+   11  git add main.txt
+   12  git commit -m "main.txt"
+   13  git status
+   14  git checkout Develop
+   15  git checkout -b Develop
+   16  touch develop.txt
+   17  ls
+   18  git add develop.txt
+   19  git commit -m "develop.txt"
+   20  git checkout -b F1
+   21  touch f1.txt
+   22  ls
+   23  git add f1.txt
+   24  git commit -m "f1.txt"
+   25  git checkout -b F2
+   26  touch f2.txt
+   27  git add f2.txt
+   28  git commit -m "f2.txt"
+   29  git branch -M main
+   30  git remote add origin https://github.com/Srinathsgithub/new-repo.git
+   31  git push origin Main Develop F1 F2
+   32  git branch 
+   33  git checkout -b F2
+   34  git branch
+   35  touch f2.txt
+   36  git add f2.txt
+   37  git commit -m "f2.txt"
+   38  ls
+   39  git branch
+   40  git push origin Main Develop F1 F2
+   41  git checkout Main
+   42  git branch -d F2
+   43  git branch -D F2
+   44  git push origin --delete F2
